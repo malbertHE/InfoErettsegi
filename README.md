@@ -21,8 +21,8 @@ Ennek hatására megjelenik a következő kód a cw karakterpáros helyén:
 ```csharp
 	Console.WriteLine();
 ```
-Ezzel kiírásonként 16 billentyű leütést spórolhatunk meg. 
-Mondhatnánk, hogy ez nem sok, de pl. a [2021Május21](/2021Május21) projekt esetében 11x használtuk a konzolra kiírást sortöréssel, vagyis 176 billentyű leütést spórolhattunk meg.
+Ezzel kiírásonként 16 billentyű leütést spórolhatunk meg.
+Mondhatnánk, hogy ez nem sok, de pl. a [2021Május21](/2021Május21) projekt esetében 11x használtuk a konzolra kiírást sortöréssel, vagyis 176 billentyű leütést spórolhattunk meg.  
 2. Ezek a kód behelyettesítések nem csak gépelés könnyítésre jók.
 Ha valaki nem emlékszik egy for vagy bármely más ciklus vagy elágazás szintaxisára, akkor a Code Snippet szintén nagy segítség.
 Az érettségi feladatok megoldásakor szükség lesz ciklusok használatára.
@@ -34,7 +34,7 @@ Amennyiben mégis elfelejtenénk érettségi közben ennek az egy ciklusnak is a
 
     }
 ```
-Ezek után már nincs más teendőnk, mint a length változót a megfelelő változóra, a kívánt tömb vagy lista hosszának a változójára cserélni és megírni a for ciklus magját.
+Ezek után már nincs más teendőnk, mint a length változót a megfelelő változóra, a kívánt tömb vagy lista hosszának a változójára cserélni és megírni a for ciklus magját.  
 3. Biztos, hogy elágazásra is szükség lesz. Ehhez is van segítség. Az if karakterpáros begépelésével és a TAB billentyű kétszeri leütésével a következő kód részlet jelenik meg:
 ```csharp
     if (true)
