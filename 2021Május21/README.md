@@ -10,13 +10,13 @@ A munka még nem készült el, ezért a csatorna mélysége nem állandó, helyenként a 
 A már elkészült résszel, mint különálló gödrök sorozatával foglalkozik a feladat. 
 Az egyszerûbb kezelés érdekében a gödröket úgy tekintjük, hogy oldalfaluk függõleges, teljes szélességben azonos mélységû, így a keresztmetszeti kép jól leírja a terepviszonyokat.
 
-[\doc\Godor1.png](\doc\Godor1.png)
+[/Doc/Godor1.png](/Doc/Godor1.png)
 
 A melyseg.txt fájlban méterenként rögzítették, hogy azon a szakaszon milyen mélyen van a gödör alja. Minden sor egy-egy egész számot tartalmaz, amely a mélység értékét mutatja – szintén méterben.
 A fájl legfeljebb 2000 számot tartalmaz, értékük legfeljebb 30 lehet.
 Tudjuk, hogy az elsõ és az utolsó méteren sértetlen a felszín, tehát ott biztosan a 0 szám áll.
 
-[\doc\Godor2.png](\doc\Godor2.png)
+[/doc/Godor2.png](/Doc/Godor2.png)
 
 A fenti példában látható keresztmetszeti képen a melyseg.txt bemeneti fájl tartalmának a kezdete látható.
 Az egyszerûbb szemléltetés miatt a forrásfájlban külön sorokban szereplõ értékeket itt az ábrán egymás mellett szerepeltetjük.

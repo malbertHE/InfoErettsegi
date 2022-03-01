@@ -68,17 +68,17 @@ Ami itt be lesz mutatva, az a 2019-es verzió, ettől függetlenül mindig van e
 Itt most csak arra a minimális tudásra összpontosítunk ami az érettségi feladat megoldásához szükséges.
 
 ### [Új alkalmazás készítése](https://docs.microsoft.com/en-us/visualstudio/ide/create-new-project?view=vs-2022)
-Elindítjuk a Visual Studio 2019-es verziót és a felugró ablakon kiválasztjuk az új projekt létrehozását:
-[\doc\CreateNewProject.png](\doc\CreateNewProject.png)
+Elindítjuk a Visual Studio 2019-es verziót és a felugró ablakon kiválasztjuk az új projekt létrehozását:  
+[/Doc/CreateNewProject.png](/doc/CreateNewProject.png)  
 Ez után egy újabb ablak ugrik fel, ahol ki kell választani, ha esetleg nem lenne alapból kiválasztva azt hogy C# és Console projektet akarsz létrehozni.
 Ezek után már könnyen kiválaszthatjuk, hogy milyen projektet akarunk létrehozni.
-Én javaslom, ha egyszerűsíteni akarod az életedet, hogy az érettségi megoldásban elégedj meg a .NET Framework lehetőségeivel:
-[\doc\CreateNewProject2.png](\doc\CreateNewProject2.png)
+Én javaslom, ha egyszerűsíteni akarod az életedet, hogy az érettségi megoldásban elégedj meg a .NET Framework lehetőségeivel:  
+[/Doc/CreateNewProject2.png](/Doc/CreateNewProject2.png)  
 A projekt kiválasztása után kattintsunk a next gombra.
 A következő oldalon megadhatjuk a projekt nevét és a projekt helyét.
 Ez a kettő fontos lesz, mert pontot kapsz arra, ha a forrásod megfelelően van elnevezve, de az még fontosabb, hogy tudd, hova hoztad létre a projektet.
-Az érettségin le lesz írva, hogy hova kell az elkészített forrás fájlokat tenni, ezért célszerű ezt a mappát kiválasztani, így utólag nem kell a forrás fájlokat másolgatni:
-[\doc\CreateNewProject3.png](\doc\CreateNewProject3.png)
+Az érettségin le lesz írva, hogy hova kell az elkészített forrás fájlokat tenni, ezért célszerű ezt a mappát kiválasztani, így utólag nem kell a forrás fájlokat másolgatni:  
+[/Doc/CreateNewProject3.png](/Doc/CreateNewProject3.png)  
 Ezek után már rákattinthatunk a Create gombra, az ablak többi részével itt most nem kell foglalkozz.
 Több ablak nem ugrik fel, helyette elindul a Visual Studio.
 Legyél egy kicsit türelmes, lassú gépen ez 30-40 másodperc is lehet.
@@ -142,8 +142,8 @@ Van ez a kód:
         i = 2;
     }
 ```
-amiről láttjuk, hogy hibás, hiszen nincs deklarálva az i, de lássuk mit ír ki ilyenkor az Error List:
-[\doc\ErrorList.png](\doc\ErrorList.png)
+amiről láttjuk, hogy hibás, hiszen nincs deklarálva az i, de lássuk mit ír ki ilyenkor az Error List:  
+[/Doc/ErrorList.png](/Doc/ErrorList.png)  
 Amikor hasonló üzenetet látsz, csak legfeljebb az 'i' helyén más szöveg van, akkor azonnal tudd, hogy az idézőjelek között lévő szöveg nincs deklarálva, vagyis gyorsan add meg a változónak a megfelelő típust.
 Ebben az esetben, ha ez az i egész számon értelmezett, akkor mondjuk így:
 ```csharp
@@ -162,8 +162,8 @@ Most az alábbi kódunk van, amit már tudunk fordítani, de futás közben hib�
         }
     }
 ```
-Ez a kód lefordul, el lehet indítani, de futás közben ezt fogja kiírni:
-[\doc\Exception.png](\doc\Exception.png)
+Ez a kód lefordul, el lehet indítani, de futás közben ezt fogja kiírni:  
+[/Doc/Exception.png](/Doc/Exception.png)  
 Futás idejű hibánál mindig megáll a program ott ahol a hiba történt és megjelenik a hibás sor mellet egy kis piros körben egy fehér x.
 Ha a hibabuborék nem ugrik fel, akkor erre rákattintva fel fog jönni.
 Sajnos ritkán lesz meg az a luxusod, hogy magyarul jön fel a hibaüzenet, erre számíts.
@@ -178,8 +178,8 @@ Akkor nézzük meg, hogy kell legegyszerűbben soronként futtatni a programot �
 Először is meg kell [állítsd a program futását](https://docs.microsoft.com/en-us/visualstudio/debugger/using-breakpoints?view=vs-2022) ott ahol vizsgálni akarod. 
 Állítsd le a programot, ha éppen fut és már túlfutott azon a részen ahol vizsgálni akarod és kattints rá a sor szélére és ahova kattintottál, ott megjelenik egy piros kör és a sor is pirosra színeződik.
 Persze ez beállításfüggő, de ez az alap.
-Valami ilyesmit kell láss:
-[\doc\BreakPoint.png](\doc\BreakPoint.png)
+Valami ilyesmit kell láss:  
+[/Doc/BreakPoint.png](/Doc/BreakPoint.png)  
 
 A hibákat felderíteni néha időigényes, ezért igyekezz figyelni, hogy ne hibázz, ill. gyakorolj, mert gyakorlás közben előjönnek a hibák és így emlékezetből tudni fogod, hogy milyen típusú hibák 
 esetén mit kell megnézned, hol lehet a hiba.
