@@ -80,19 +80,45 @@ A vízmennyiség 280 m^3.
 ``` 
 
 ## Megoldás magyarázata
-Nem minden sort magyarázok meg, mert nagyon egyértelmûek, csak azokat a sorokat, ahol valami lényeges történik:
-- Az elsõ feladatunk, hogy beolvassunk az adatokat a melyseg.txt fájlból. Ezt meg is tesszük és letároljuk a felszín tömbben. A beolvasástól kezdve a fájl tartalmát el tudjuk érni a felszín tömbben.
-Szintén az elsõ feladat része volt, hogy kiírjuk a fájl adatainak számát. Mivel minden sorban 1 adat volt, ezért ez egyenlõ a tömb elemszámával. Ha 2 soronként lenne egy adat, akkor a tömb elemszámát osztanánk kettõvel.
-- A második feladatban be kell kérjünk egy számot. Mivel csak szöveget tudunk bekérni, ezért a bekérést követõen át is alakítjuk számmá és azonnal átadjuk ezt az értéket a	godorIndex változónkra.
-Az így beolvasott index segítségével a felszín tömb adott elemét fel tudjuk használni kiíratásra. Fontos, hogy a megadott godorIndex változóból vonjunk ki egyet, mert a tömbök sorszámozása 0-tól indul.
-- A harmadik feladatban leszûrjük a felszín tömböt azokra az elemekre, amik értéke 0, majd ezeket a Length segítségével megszámoljuk. Ez után már tudunk százalékot számítani.
+A feladat elsõ része, hogy töltsük be az adatokat.
+Itt egy sor a kiírás, és egy sor az adatbetöltés.
+Beolvassunk az adatokat a melyseg.txt fájlból, majd letároljuk a felszín tömbben.
+A beolvasástól kezdve a fájl tartalmát el tudjuk érni a felszín tömbben. vagyos ettõl a sortól 'lefele' elérjük a fájl minden sorát ezen a tömbön keresztül.
+Egy elemére a tömbnév[i] segítségével hivatkozhatunk, ahol i egy 0 és a tömb hossza mínusz egy egész szám.
+Ezt érdemes jól begyakorolnod, mert ez mindegyik érettségi programozási feladatban elõ fog jönni és a legtöbbnél az elsõ pontokat erre kapod.
+Ha ezen nem jutsz tovább, akkor a programozási részen elvéreztél.
+Az viszont jó hír, hogy mindegyik feladatnál alkalmazhatod ezt a megoldást és pont jár érte.
+A lényege, hogy egy szöveg tömbbe betöltöd a File.ReadAllLines segítségével a megadott nevû fájl összes sorát.
+Ezt már egyszer leírtam, de annyira fontos, hogy nem árt még egyszer külön elmagyarázni.
+Ehhez az elsõ részhez tartozik az is, hogy kiírd hány adata van a fájlnak.
+Mivel minden sorban 1 adat volt, ezért ez egyenlõ a tömb elemszámával.
+Ha 2 soronként lenne egy adat, akkor a tömb elemszámát osztanánk kettõvel.
+Ez egyszerû.
+Itt célszerû megjegyezned, hogy legkönnyebben egy tömbnek a hosszát vagyis az elemszámát a [tömbnév.Length](https://docs.microsoft.com/en-us/dotnet/api/system.array.length?view=net-6.0) segítségével kérheted le.
+Ugyanez lista lestén a [listanév.Count](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.count?view=net-6.0).
+Ne lepõdj meg ezen, hogy az egyiknél Length a másiknál Count adja vissza az elemszámokat.
+
+A második rész egy adat beolvasás, egy egész szám bekérése.
+Mivel csak szöveget tudunk bekérni, ezért a bekérést követõen át is alakítjuk számmá és azonnal átadjuk ezt az értéket a godorIndex változónknak.
+Ezt is meg kell tanulni, szinte mindegyik feladatban elõjön.
+Itt láthatsz példást arra is, hogy lehet a tömb adott elemére hivatkozni.
+Ne feledd a mínusz egyet.
+A tömb 0-tól sorszámozott, a felhasználó viszont 1-tõl számozva gondol az adott elemre.
+
+A harmadik feladatban megszámoljuk a tömbbõl azokat az elemeket amik 0 értékûek.
+Ez után már tudunk százalékot számítani.
 A kiírásnál figyelni kell a két tizedes jegy kiírással, mert a százalék számításunk ettõl kicsit pontosabb.
-- A negyedik feladat megoldásához felhasználunk egy forech ciklust, amivel végig megyünk a felszínen és megnézzük, hogy hol van gödör.
-Ahol gödör kezdõdik, ott kiírjuk a gödör adatai a godrok lista soron következõ elemére. 
+
+A negyedik feladat megoldásához felhasználunk egy forech ciklust, amivel végig megyünk a felszínen és megnézzük, hogy hol van gödör.
+Itt most foreach ciklust használtunk, de lehetett volna for, vagy ForEach metódust is, ezekre is láttál vagy fogsz látni a késõbbiekben példát.
+Amelyik eszedbe jut és szimpatikusabb azt használd.
+A ciklusban, ahol gödör kezdõdik, ott kiírjuk a gödör adatai a godrok lista soron következõ elemére. 
 A godorMelysegek karakterláncban gyûjtjük össze a gödör információit, vagyis a méterenkénti mélység értékeket.
 A végén a godrok lista tartalmát írjuk ki a godrok.txt fájlba.
-- Az ötödik feladatunk az elõbbi megoldásnak köszönhetõen nagyon leegyszerûsödött, csak a godrok lista elemszámát kell kiírjuk.
-- A hatodik feladatban a megadott godorIndex-en lévõ elemrõl írunk ki információkat.
+
+Az ötödik feladatunk az elõbbi megoldásnak köszönhetõen nagyon leegyszerûsödött, csak a godrok lista elemszámát kell kiírjuk.
+
+A hatodik feladatban a megadott godorIndex-en lévõ elemrõl írunk ki információkat.
 Ez a legbonyolultabb rész.
 Elsõként megvizsgáljuk, hogy van-e az adott helyen gödör.
 Amennyiben van gödör az adott helyen, akkor megkeressük a gödör elejét és végét 2 for ciklussal.
@@ -102,6 +128,6 @@ Itt már az új szám listával dolgozunk, mert a számokat könnyen össze tudjuk haso
 A feladat többi részét egyszerûsítjük, a maximum kereséshez a Max függvényt, a térfogat és vízmélység számításhoz a Sum függvényt használjuk fel.
 Ez sokkal egyszerûbbé és átláthatóvá teszi az adott alpontok megoldását.
 
-## Javaslat
-Másold le magadhoz a projektet és próbáld meg a ciklusokat helyettesíteni Linq függvényekkel.
-Próbáld megfejteni ezeknek a Linq függvények az elõnyeit és korlátait ezekben az esetekben.
+## További gyakorló feladatok
+- Másold le magadhoz a projektet és próbáld meg a ciklusokat helyettesíteni Linq függvényekkel.
+- Próbáld megfejteni ezeknek a Linq függvények az elõnyeit és korlátait ezekben az esetekben.

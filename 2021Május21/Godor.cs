@@ -20,7 +20,8 @@ namespace _2021Május21
             Console.WriteLine($"Ezen a helyen a felszín {felszín[valósGödörIndex]} méter mélyen van.");
 
             Console.WriteLine("3. feladat");
-            float érintetlenFelszinSzazalek = (float)Array.FindAll(felszín, x => x == "0").Length / felszín.Length * 100;
+            
+            float érintetlenFelszinSzazalek = (float)felszín.Count(x => x == "0") / felszín.Length * 100;
             Console.WriteLine("Az érintetlen terület aránya {0:n2}%.", érintetlenFelszinSzazalek);
 
             List<string> godrok = new List<string>();

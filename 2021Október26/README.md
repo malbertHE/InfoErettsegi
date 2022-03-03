@@ -212,6 +212,6 @@ Ami érdekes még, a Lépés saját típus kapott egy függvényt, mégpedig egy speciáli
 Ide bármilyen függvényt megírhattunk volna, aminek más a neve és akkor nem futsz szembe az override kulcsszóval, de ez egy hasznos függvény amirõl jó ha tudsz, még akkor is ha itt most nem magyarázom el és az érettségin nem szükséges az ismerete, mert másképpen is megoldható a feladat.
 
 ## További gyakorló feladatok
-Másold le magadhoz a projektet és próbáld meg a ciklusokat helyettesíteni Linq függvényekkel.
-Próbáld megfejteni ezeknek a Linq függvények az elõnyeit és korlátait ezekben az esetekben.
-Írd át, hogy a résztáblázat számát ne függvény számolja ki, hanem közvetlenül a Main metódusban legyen kiszámolva.
+- Másold le magadhoz a projektet és próbáld meg a ciklusokat helyettesíteni Linq függvényekkel.
+- Próbáld megfejteni ezeknek a Linq függvények az elõnyeit és korlátait ezekben az esetekben.
+- Írd át, hogy a résztáblázat számát ne függvény számolja ki, hanem közvetlenül a Main metódusban legyen kiszámolva.
