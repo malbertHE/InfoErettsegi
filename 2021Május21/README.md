@@ -1,7 +1,7 @@
 # Gödör feladat
 
 A feladat leírás hivatalos forrása: https://dload-oktatas.educatio.hu/erettsegi/feladatok_2021tavasz_emelt/e_inf_21maj_fl.pdf
-A forrás fájlokat innen tudjuk leszedni (e_inffor_21maj_fl.zip fájl): https://www.oktatas.hu/kozneveles/erettsegi/feladatsorok/emelt_szint_2021tavasz/emelt_11nap 
+Adat fájlok elérhetõsége (e_inffor_21maj_fl.zip fájl): https://www.oktatas.hu/kozneveles/erettsegi/feladatsorok/emelt_szint_2021tavasz/emelt_11nap 
 
 ## Feladat leírása
 
