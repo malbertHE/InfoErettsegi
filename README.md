@@ -512,7 +512,7 @@ Nem csak a fent bemutatott függvényeket tudod felhasználni, mindenképpen né
 
 ## Eddigi megoldások
 - [2021 Október 26.](/2021Október26/): Sudoku.
-- [2021 Május 21. érettségi feladat](/2021Május21/): Gödör.
+- [2021 Május 21.](/2021Május21/): Gödör.
 
 :warning: FIGYELEM! A fentiekkel csak annyi tudást szerezhettél, ami egy érettségihez éppen elég, ettől még nem lettél programozó, de ilyen kis feladatokat már meg fogsz tudni oldani. Ezen kívül vedd figyelembe, hogy bármennyire is igyekeztem, én is ember vagyok és hibázhatok!
 

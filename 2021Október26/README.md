@@ -1,6 +1,6 @@
 # Sudoku feladat
 
-A feladat leírás hivatalos forrása: https://dload-oktatas.educatio.hu/erettsegi/feladatok_2021osz_emelt/e_inf_21okt_fl.pdf
+A feladat leírás hivatalos forrása: https://dload-oktatas.educatio.hu/erettsegi/feladatok_2021osz_emelt/e_inf_21okt_fl.pdf  
 Adat fájlok elérhetõsége (e_inffor_21okt_fl.zip fájl): https://www.oktatas.hu/kozneveles/erettsegi/feladatsorok/emelt_szint_2021osz/emelt_8nap
 
 ## Feladat leírása
