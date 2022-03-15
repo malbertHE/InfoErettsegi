@@ -48,7 +48,7 @@ Ezek után már csak a true logikai értéket kell átírni a szükséges felté
 
 Egy újabb lehetőség, hogy egyszerűsítsd az érettségin a programozást.  
 Ezzel is 2 fegyvert kapsz egyszerre a kezedbe. Az IntelliSense igyekszik 'kitalálni a gondolatodat' és különféle lehetőségeket ajánl fel.  
-Vegyük például azt, hogy be szeretnél olvasni valamit a konzolról, de nem emlékszel a függvény. 
+Vegyük például azt, hogy be szeretnél olvasni valamit a konzolról, de nem emlékszel a függvény nevére. 
 Mivel tudod, hogy a konzollal akarsz kezdeni valamit, ezért elég elkezdened begépelni Console szót, amire az IntelliSense felajánlja neked a lehetőségeket.
 A felajánlott listában az egérrel is választhatunk vagy a kurzor billentyűkkel is navigálhatunk, majd a kiválasztott elemre ráállva elég a TAB gombot vagy az ENTER gombot leütni és máris begépeli helyettünk.
 Fontos, hogy a lista elejére mindig azt próbálja betenni, amire nagy valószínűséggel szükségünk lehet, így segítve azt, hogy ne kelljen a listában sokáig keresgélni.
@@ -236,7 +236,7 @@ Lássunk egy olyan példát, amihez hasonló adatbekérés biztosan lesz az ére
     int megadottSzám = int.Parse(Console.ReadLine());
     Console.WriteLine("A megadott szám kétszerese: {0}", 2*megadottSzám);
 ```
-A fenti kódrészlet kiír egy szövet sortörés nélkül, majd beolvas egy a felhasználó által bírt karakterláncot, amit számmá alakít, az [int.Parse](https://docs.microsoft.com/en-us/dotnet/api/system.int32.parse?view=net-6.0) függvény segítségével.
+A fenti kódrészlet kiír egy szövegett sortörés nélkül, majd beolvas egy a felhasználó által bírt karakterláncot, amit számmá alakít, az [int.Parse](https://docs.microsoft.com/en-us/dotnet/api/system.int32.parse?view=net-6.0) függvény segítségével.
 Csak akkor fogja tudni számmá alakítani, ha a felhasználó valóban számot írt bele.
 Amennyiben azt is kéne ellenőrizni, hogy a felhasználó valóban számot adott meg és olyat ami elfér az int típusban, akkor az [int.TryParse](https://docs.microsoft.com/en-us/dotnet/api/system.int32.tryparse?view=net-6.0) függvénnyel tudnánk egyszerűen megvalósítani az ellenőrzést.
 Az érettségi feladatoknál viszont erre nincs szükség.
@@ -260,7 +260,7 @@ Csak azonos típusokat tudsz összehasonlítani.
 Ne keverd az értékadást ami egy darab egyenlőség jel a logikai egyenlőség vizsgálattal, ami két darab egyenlőség jel.
 Azt is el szokták felejteni kezdők, hogy az [if](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements) kulcsszót mindig egy nyitó és záró zárójel követ, amiben benne van a logikai vizsgálat.
 A logikai vizsgálatoknál rendszerint azt nézzük meg, hogy két érték azonos-e, pl. két szám változó, ilyenkor igaz értéket ad vissza, különben hamisat.
-A negálás a felkiáltó jel, tehát ha azt nézed meg, hogy két változó egyenlőre, akkor == , ha azt, hogy nem egyenlő, akkor != logikai operátort használj.
+A negálás a felkiáltó jel, tehát ha azt nézed meg, hogy két változó egyenlő, akkor == , ha azt, hogy nem egyenlő, akkor != logikai operátort használj.
 Fontos még a lusta és/vagy, amivel összetett feltételeket tudsz megadni.
 Az és esetén: && , ill. vagy esetén || karakterpárost használd.
 Ha nem igazán érted az összetett feltételeket, akkor próbáld kerülni.
@@ -308,7 +308,9 @@ Itt arra kell figyelni, hogy a szövegben lévő paraméterek szigorúan 0-tól 
 
 Egy másik lehetőség a fenti példára:
 ```csharp
-    Console.WriteLine($"A {2} és {3} egység oldalú téglalap kerülete: {a*2+b*2}.");
+    int a = 2;
+    int b = 3;
+    Console.WriteLine($"A {a} és {b} egység oldalú téglalap kerülete: {a*2+b*2}.");
 ```
 
 Egy kerülendő megoldás, de érettségin belefér:
@@ -323,7 +325,7 @@ Egyes feladatoknál előjön az a probléma, hogy adatokat formázottan kell ki�
 #### Egy sor kiírása, sortörés nélkül: [Write](https://docs.microsoft.com/en-us/dotnet/api/system.console.write?view=net-6.0)
 A WriteLine akár akarjuk, akár nem, sort fog törni, az érettségi feladatokban viszont adatbekéréseknél ez gondot okoz.
 Ilyenkor lehet használni a Console.Write metódust.
-Hasonló módon használhatjuk ezt is mint a WriteLine metódust, azzal a különbséggel, hogy itt kötelező kiírni valamilyen szöveget, mert a metódsu mindenképpen vár egy paramétert, vagyis a következő kód hibát fog dobni:
+Hasonló módon használhatjuk ezt is mint a WriteLine metódust, azzal a különbséggel, hogy itt kötelező kiírni valamilyen szöveget, mert a metódus mindenképpen vár egy paramétert, vagyis a következő kód hibát fog dobni:
 ```csharp
     Console.Write();
 ```
@@ -423,7 +425,7 @@ Az érettségi minden esetben megoldható saját adat típusok nélkül is, de e
 Ezt is többféle képen megtehetnéd, most egy olyan lehetőséget mutatok, ami egyszerű és gyors és nem kell sok új dolgot tanulj.
 Azt már láthattad, hogy a Main metódusod egy Program osztályban volt.
 Ezt az osztály kulcsszót, a [class](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/types/classes) kulcsszót másra is fel tudod használni, pl. létrehozhatsz saját típusokat.
-Nézzünk egy olyan példást, ahol emberekről akarunk adatokat tárolni, például a nevüket, a születési dátumukat és egy sorszámot róluk.
+Nézzünk egy olyan példát, ahol emberekről akarunk adatokat tárolni, például a nevüket, a születési dátumukat és egy sorszámot róluk.
 Ezt így tudod megtenni könnyen a class kulcsszóval:
 ```csharp
     class Ember
@@ -433,7 +435,7 @@ Ezt így tudod megtenni könnyen a class kulcsszóval:
         public int Sorszám;
     }
 ```
-Fontos, hogy a class kulcsszó után adod meg ennek az osztálynak vagy most nevezzük saját adattípusnak, mert most csak adat tárolására fogod használni a nevét, majd létrehozol egy nyitó és záró kapcsos zárójelet
+Fontos, hogy a class kulcsszó után adod meg ennek az osztálynak vagy most nevezzük **saját adattípusnak**, mert most csak adat tárolására fogod használni a nevét, majd létrehozol egy nyitó és záró kapcsos zárójelet
 ami kijelöli a fordító számára, hogy az osztály leírása mettől meddig tart.
 E két zárójel közzé írod meg a nyilvános vagy más szóval publikus adattagokat.
 Fontos, hogy publikus, mert csak így fogod kívülről elérni vagyis így fogod tudni használni, tehát az egyes adattagok esetében mindig a public kulcsszóval kezded.
@@ -511,11 +513,16 @@ Nem csak a fent bemutatott függvényeket tudod felhasználni, mindenképpen né
 - kiválasztás: [Select](https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable.select?view=net-6.0).
 
 ## Eddigi megoldások
-- [2021 Október 26.](/2021Október26/): Sudoku.
-- [2021 Május 21.](/2021Május21/): Gödör.
+- [2021 Október 26.](/2021Október26/): Sudoku. A Linq ereje érettségi feladatoknál.
+- [2021 Május 21.](/2021Május21/): Gödör. Példák for, foreach és Linq függvényekre.
+- [2020 Október 28.](/2020Október28/): Sorozatok. Érettségi feladat megoldás a lehető legkevesebb tanulással.
 
-:warning: FIGYELEM! A fentiekkel csak annyi tudást szerezhettél, ami egy érettségihez éppen elég, ettől még nem lettél programozó, de ilyen kis feladatokat már meg fogsz tudni oldani. Ezen kívül vedd figyelembe, hogy bármennyire is igyekeztem, én is ember vagyok és hibázhatok!
+:warning: FIGYELEM! A fentiekkel csak annyi tudást szerezhettél, ami egy érettségihez éppen elég, ettől még nem lettél programozó, de ilyen kis feladatokat már meg fogsz tudni oldani.Ezen kívül vedd figyelembe, hogy bármennyire is igyekeztem, én is ember vagyok és hibázhatok!
 
 Ne feledd használni az IntelliSense-t, ha szükséged van rá!
 
-Jó tanulást és ne állj meg ezen a szinten!
+Ne állj meg ezen a szinten, hanem gondolkodj el azon, hogy miért tetted le az emelt szintű érettségit.
+Ha azért, hogy programozó legyél, akkor ne a minimumra törekedj, mert soha nem éred el a célod. 
+Amit az iskolában tanulsz az nem elég arra, hogy programozó legyél.
+
+Jó tanulást! 
