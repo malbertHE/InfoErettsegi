@@ -50,10 +50,10 @@
     <None Include="App.config" />
     <None Include="README.md" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Doc\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Content Include="Doc\Godor1.png" />
+    <Content Include="Doc\Godor2.png" />
     <Content Include="melyseg.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

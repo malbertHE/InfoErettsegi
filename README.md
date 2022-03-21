@@ -521,6 +521,9 @@ Nem csak a fent bemutatott függvényeket tudod felhasználni, mindenképpen né
 
 Ne feledd használni az IntelliSense-t, ha szükséged van rá!
 
+A változó neveid legyenek érthetőek, de ne feltétlenül olyan hosszúak, mint amiket én a példában bemutattam, mert sokat fogsz gépelni.
+Én azért használtam ennyire hosszú változó neveket, hogy minél könnyebb legyen átlátni.
+
 Ne állj meg ezen a szinten, hanem gondolkodj el azon, hogy miért tetted le az emelt szintű érettségit.
 Ha azért, hogy programozó legyél, akkor ne a minimumra törekedj, mert soha nem éred el a célod. 
 Amit az iskolában tanulsz az nem elég arra, hogy programozó legyél.

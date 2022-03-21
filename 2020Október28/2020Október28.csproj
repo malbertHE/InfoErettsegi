@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BC9F0978-3369-41B9-976A-EA6A61AFD243}</ProjectGuid>
+    <ProjectGuid>{D90FD5BA-0E9F-4567-BABA-75BD2464D035}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_2021Október26</RootNamespace>
-    <AssemblyName>2021Október26</AssemblyName>
+    <RootNamespace>_2020Október28</RootNamespace>
+    <AssemblyName>2020Október28</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sudoku.cs" />
+    <Compile Include="Sorozatok.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -51,18 +51,10 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Doc\Sudoku1.png" />
-    <Content Include="Doc\Sudoku2.png" />
-    <Content Include="konnyu.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="kozepes.txt">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="nehez.txt">
+    <Content Include="Doc\Sorozatok1.png" />
+    <Content Include="lista.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
