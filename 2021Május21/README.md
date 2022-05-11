@@ -95,7 +95,7 @@ Mivel minden sorban 1 adat volt, ezért ez egyenlõ a tömb elemszámával.
 Ha 2 soronként lenne egy adat, akkor a tömb elemszámát osztanánk kettõvel.
 Ez egyszerû.
 Itt célszerû megjegyezned, hogy legkönnyebben egy tömbnek a hosszát vagyis az elemszámát a [tömbnév.Length](https://docs.microsoft.com/en-us/dotnet/api/system.array.length?view=net-6.0) segítségével kérheted le.
-Ugyanez lista lestén a [listanév.Count](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.count?view=net-6.0).
+Ugyanez a lista esetén a [listanév.Count](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1.count?view=net-6.0).
 Ne lepõdj meg ezen, hogy az egyiknél Length a másiknál Count adja vissza az elemszámokat.
 
 A második rész egy adat beolvasás, egy egész szám bekérése.
@@ -109,7 +109,7 @@ A harmadik feladatban megszámoljuk a tömbbõl azokat az elemeket amik 0 értékûek.
 Ez után már tudunk százalékot számítani.
 A kiírásnál figyelni kell a két tizedes jegy kiírással, mert a százalék számításunk ettõl kicsit pontosabb.
 
-A negyedik feladat megoldásához felhasználunk egy forech ciklust, amivel végig megyünk a felszínen és megnézzük, hogy hol van gödör.
+A negyedik feladat megoldásához felhasználunk egy foreach ciklust, amivel végig megyünk a felszínen és megnézzük, hogy hol van gödör.
 Itt most foreach ciklust használtunk, de lehetett volna for, vagy ForEach metódust is, ezekre is láttál vagy fogsz látni a késõbbiekben példát.
 Amelyik eszedbe jut és szimpatikusabb azt használd.
 A ciklusban, ahol gödör kezdõdik, ott kiírjuk a gödör adatai a godrok lista soron következõ elemére. 

@@ -124,7 +124,8 @@ Nézzük egyszer for ciklusal:
 Jól látható, hogy 2 ciklus, egy soronkénti Split és egy adattagonkénti Parse mûveletre volt szükség.
 Most lássuk Linq-val:
 ```csharp
-    byte[][] mátrix = adatSorok.Take(9).Select(sor => sor.Split(' ').Select(érték => byte.Parse(érték)).ToArray()).ToArray();
+    byte[][] mátrix = adatSorok.Take(9).Select(sor => sor.Split(' ').
+                        Select(érték => byte.Parse(érték)).ToArray()).ToArray();
 ```
 Bár elsõre nem biztos, hogy látszik, de a második megoldásban itt is kevesebb karakterleütésre volt szükség.
 Természetesen ez nagyban függ az általunk választott változónevektõl is.
@@ -165,7 +166,9 @@ Lássuk for ciklussal:
 ```
 Ugyanez Linq-val:
 ```csharp
-    float üresHelyekAránya = (from sor in mátrix from mezõ in sor where mezõ == 0 select mezõ).Count() / (9 * 9) * 100;
+    float üresHelyekAránya = 
+        (from sor in mátrix from mezõ in sor where mezõ == 0 select mezõ).
+        Count() / (9 * 9) * 100;
 ```
 Elõször olvassuk ki aztán szedjük szét. Kiolvasva ez valahogy így hangzana (már ha éppen olvasod):
 az üresHelyekAránya változóba beletöltjük a mátrixból a soroknak azon mezõit, amelyek megegyeznek 0-val, majd megszámoljuk õket és elosztjuk a sudoku tábla mezõszámaival majd százzal megszorzunk, vagyis a 0-ás mezõk százalékát számoljuk ki.  
