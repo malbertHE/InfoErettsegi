@@ -47,8 +47,8 @@ namespace _2020Október28
             string megadottNap = Console.ReadLine();
             List<string> adottNaponVetítettFilmek = new List<string>();
             for (int i = 0; i < adatok.Length; i += 5)
-                if (!adottNaponVetítettFilmek.Contains(adatok[i + 1]) && DateTime.TryParse(adatok[i], out DateTime vetítésDátuma) && hetnapja(vetítésDátuma.Year, vetítésDátuma.Month, vetítésDátuma.Day) == megadottNap)
-                    adottNaponVetítettFilmek.Add(adatok[i+1]);
+                if (!adottNaponVetítettFilmek.Contains(adatok[i + 1]) && DateTime.TryParse(adatok[i], out DateTime vetítésDátuma) && 
+                    hetnapja(vetítésDátuma.Year, vetítésDátuma.Month, vetítésDátuma.Day) == megadottNap) adottNaponVetítettFilmek.Add(adatok[i+1]);
             if (adottNaponVetítettFilmek.Count == 0)
                 Console.WriteLine("Az adott napon nem kerül adásba sorozat.");
             else

@@ -70,7 +70,7 @@ Itt most csak arra a minimális tudásra összpontosítunk ami az érettségi fe
 ### [Új alkalmazás készítése](https://docs.microsoft.com/en-us/visualstudio/ide/create-new-project?view=vs-2022)
 Elindítjuk a Visual Studio 2019-es verziót és a felugró ablakon kiválasztjuk az új projekt létrehozását:  
 ![/Doc/CreateNewProject.png](/Doc/CreateNewProject.png)  
-Ez után egy újabb ablak ugrik fel, ahol ki kell választani, ha esetleg nem lenne alapból kiválasztva azt hogy C# és Console projektet akarsz létrehozni.
+Ez után egy újabb ablak ugrik fel, ahol ki kell választani, ha esetleg nem lenne alapból kiválasztva azt, hogy C# és Console projektet akarsz létrehozni.
 Ezek után már könnyen kiválaszthatjuk, hogy milyen projektet akarunk létrehozni.
 Én javaslom, ha egyszerűsíteni akarod az életedet, hogy az érettségi megoldásban elégedj meg a .NET Framework lehetőségeivel:  
 ![/Doc/CreateNewProject2.png](/Doc/CreateNewProject2.png)  
