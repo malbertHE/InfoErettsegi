@@ -294,7 +294,7 @@ Ezt arra célszerű használni, hogy léptessük a változót, pl. i++ , ami egg
 
 2. Szöveg kiírása sortöréssel:
 ```csharp
-    Console.WriteLine("A két idézőjel közzé lehet beírni a szöveget, ami megjelenik a konzol ablakon.");
+    Console.WriteLine("A két idézőjel közzé Kell beírni a szöveget.");
 ```
 
 3. Szöveg kiírása változó részekkel:
@@ -302,7 +302,8 @@ Erre több lehetőség is van, kezdjük a WriteLine standard megoldásával:
 ```csharp
     int a = 2;
     int b = 3;
-    Console.WriteLine("A {0} és {1} egység oldalú téglalap kerülete: {2}.", a, b, a*2+b*2);
+    Console.WriteLine("A {0} és {1} egység oldalú téglalap kerülete: {2}.", 
+        a, b, a*2+b*2);
 ```
 Itt arra kell figyelni, hogy a szövegben lévő paraméterek szigorúan 0-tól induló monoton egyesével növekvő sorszám és pont annyi paramétert kell vesszővel elválasztva megadni, amennyi paraméterre hivatkozik a szöveg.
 
@@ -315,7 +316,8 @@ Egy másik lehetőség a fenti példára:
 
 Egy kerülendő megoldás, de érettségin belefér:
 ```csharp
-    Console.WriteLine("A " + 2.ToString() + " és " + 3.ToString() + " egység oldalú téglalap kerülete: " + (2*2+3*2).ToString() + ".");
+    Console.WriteLine("A " + 2.ToString() + " és " + 3.ToString() + 
+        " egység oldalú téglalap kerülete: " + (2*2+3*2).ToString() + ".");
 ```
 
 Ezen kívül vannak még lehetőségeink, pl. a string osztály is biztosít ilyen függvényt, a [Concat](https://docs.microsoft.com/en-us/dotnet/api/system.string.concat?view=net-6.0) függvényt, de talán a fent leírtak alkalmazása a legcélszerűbb, a legkevesebb gépeléssel és tudással is használható.
@@ -411,7 +413,8 @@ Kigyűjtöd az adatokat egy string listába, majd ezt a string listát kiírod f
 Ezt így tudod megtenni:
 ```csharp
     List<string> gyűjtöttAdatokLista = new List<string>();
-    /* ... itt összeszeded az adatokat a listába, ezt lásd az egyes feladat megoldásoknál ... */
+    /* ... itt összeszeded az adatokat a listába, ezt lásd az egyes feladat 
+        megoldásoknál ... */
     File.WriteAllLines("gyűjtöttAdatok.txt", gyűjtöttAdatokLista);
 ```
 A fenti kód első sora létrehoz egy új szöveges listát, aminek a neve: gyújtöttAdatokLista.
@@ -494,7 +497,8 @@ A most következő példában összetett adat típust mutatok be, hogy ezt is é
 Ehhez a példához felhasználjuk az Ember osztályunkat.
 Számoljuk meg, hogy egy Ember listában hány embernek kezdődik a neve 'Kis' betűkkel:
 ```csharp
-    List<Ember> kisEmberek = emberek.Count(ember => ember.Név.Substring(0,3) == 'Kis');
+    List<Ember> kisEmberek = 
+        emberek.Count(ember => ember.Név.Substring(0,3) == 'Kis');
 ```
 A fenti feltételviszgálatnál láthatod, hogyan kell összetett adatszerkezeteket használni.
 Itt az ember nevű objektum, ami amúgy az emberek lista elemeit takarja, vesszük ki a Név adattagot és ennek az első 3 karakterét vizsgáljuk meg, hogy egyenlő-e 'Kis' karakterlánccal.
